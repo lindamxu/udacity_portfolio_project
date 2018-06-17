@@ -1,0 +1,156 @@
+/*general style */
+body, html, section {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+body {
+  background-color: white;
+  position: relative;
+}
+h1,li, p, .nav_item a, h2 {
+  color: #cd5c5c;
+  font-family: Alegreya;
+  text-decoration: none;
+}
+header, nav, footer, section, article, div {
+  box-sizing: border-box;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+/*navigation style */
+ul {
+  list-style: none;
+}
+main {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.nav_item {
+  display: inline-block;
+  width: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  text-transform: lowercase;
+  font-size: 20px;
+  font-weight: bold;
+}
+.nav {
+  width: 90%;
+  text-align: right;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/*header style */
+.title {
+  font-size: 50px;
+  font-weight: 50;
+}
+.subheading {
+  font-size: 20px;
+  font-style: italic;
+}
+.header__logo {
+  height: 72px;
+  margin-right: 1em;
+  vertical-align: center;
+  margin-top: 12px;
+}
+.header__inner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.name {
+  line-height: 0px;
+}
+.header_left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.header {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 4px solid #cd5c5c;
+  border-bottom-width: thin;
+}
+
+/*intro style*/
+.intro {
+  width: 100%;
+  height: 500px;
+  position: relative;
+  background-image: url("../images/webdesign.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.intro h2, .intro p {
+  color: white;
+}
+.intro article {
+  padding-left: 1em;
+  box-sizing: border-box;
+  bottom: 0;
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.7);
+  background-size: contain;
+  position: absolute;
+  width: 100%;
+  color: #fff;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/*featured style*/
+.content h1 {
+  font-size: 40px;
+  font-weight: lighter;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+.project {
+  padding-right: 5em;
+  margin-left: 10em;
+}
+.project_description p {
+  color: white;
+}
+.project_description {
+  width: 100%;
+  height: 100px;
+  background-color: #cd5c5c;
+  border-radius: 10px;
+}
+/* footer style */
+footer {
+  border-top: 1px solid #E0E0E0;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+footer li {
+  display: inline-block;
+
+}
+footer a {
+  text-decoration: none;
+  color: #cd5c5c;
+  padding: normal;
+
+}

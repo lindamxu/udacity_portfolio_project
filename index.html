@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Linda Xu</title>
+    <link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link rel="stylesheet" type="text/css" href="./css/responsive.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__inner">
+        <div class="header_left">
+          <img class="header__logo" src="./images/logo.png" alt="logo">
+          <div class="name">
+            <h1 class="title">LINDA XU</h1>
+            <p class="subheading">Front End Ninja</p>
+          </div>
+        </div>
+        <div class="header_right">
+          <a id="menu" class="header__menu">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </header>
+    <nav id="drawer" class="nav">
+      <ul class="nav_list">
+        <li class="nav_item"><a href="#">About</a></li>
+        <li class="nav_item"><a href="#">Projects</a></li>
+        <li class="nav_item"><a href="#">Blog</a></li>
+        <li class="nav_item"><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section class="content">
+        <section class="intro sec">
+          <article class="description">
+            <h2>Welcome!</h2>
+            <p class="blurb">Linda Xu is a professional freelance web developer capable of any project, big or small. Learn about her projects here. </p>
+          </article>
+        </section>
+        <section class="featured">
+          <h1>Featured Work</h1>
+          <div class="container">
+            <div class="project">
+              <img class="spoiler" src="./images/SpoilerAlert-Identity_Logo-Icon.png" alt="spoiler_alert" width="100%" height="auto">
+              <h2>Spoiler Alert </h2>
+              <div class="project_description">
+                <p>Spoiler Alert is a mobile app that tells you when your groceries are about to expire and calculates recipes that utilizes those items.</p>
+              </div>
+            </div>
+            <div class="project">
+              <img class="cure_recruit" src="./images/curecruiterlogo.png" alt="cure_recruit" width="100%" height="auto">
+              <h2>Cure Recruit </h2>
+              <div class="project_description">
+                <p> Cure Recruit is a mobile app matching cancer patients to clinical trials they may be eligible for.</p>
+              </div>
+            </div>
+            <div class="project">
+              <img class="eagle" src="./images/eagle.png" alt="eagle" width="100%" height="auto">
+              <h2>Eagle Biolabs</h2>
+              <div class="project_description">
+                <p> Eagle Biolabs is an online marketplace for premium, pharmaceutical-grade vitamins manufactured in a cGMP facility.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+      <footer>
+        <ul>
+          <li><a href="#">Contact |</a></li>
+          <li><a href="#"> Follow on Twitter |</a></li>
+          <li><a href="#">RSS</a></li>
+        </ul>
+      </footer>
+    </main>
+    <script>
+      /*
+       * Open the drawer when the menu ison is clicked.
+       */
+      var menu = document.querySelector('#menu');
+      var main = document.querySelector('main');
+      var drawer = document.querySelector('.nav');
+
+      menu.addEventListener('click', function(e) {
+        drawer.classList.toggle('open');
+        e.stopPropagation();
+      });
+      main.addEventListener('click', function() {
+        drawer.classList.remove('open');
+      });
+    </script>
+  </body>
+</html>
